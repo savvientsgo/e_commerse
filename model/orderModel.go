@@ -11,7 +11,7 @@ type Order struct {
 	SellerID      string    `bson:"sellerId,omitempty"`
 	Quantity       int      `bson:"quantity"`
 	TotalPrice    float64   `bson:"totalPrice"`
-	PaymentMethod string    `bson:"paymentMethod,omitempty"`
+	PaymentMethod  BankDetails    `bson:"paymentMethod,omitempty"`
 	OrderDate     time.Time `bson:"orderDate"`
 	DeliveryDate  time.Time `bson:"deliveryDate,omitempty"`
 	Address        Address  `bson:"address,omitempty"`
