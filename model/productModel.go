@@ -8,7 +8,7 @@ type Inventory struct {
 	Type        string    `bson:"type"`
 	Description string    `bson:"description,omitempty"`
 	Price       float64   `bson:"price"`
-	Quantity    uint      `bson:"quantity"`
+	Quantity     int      `bson:"quantity"`
 	SellerID    string    `bson:"sellerId,omitempty"`
 	CreatedAt   time.Time `bson:"createdAt"`
 	UpdatedAt   time.Time `bson:"updatedAt"`
